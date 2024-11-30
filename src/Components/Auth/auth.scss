@@ -1,0 +1,142 @@
+$ruler: 16px;
+$color-red: #ae1100;
+$color-bg: #ebecf0;
+$color-shadow: #babecc;
+$color-white: #fff;
+
+.formBody {
+  height: 82.8vh;
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.authForm {
+  width: 30%;
+  padding: $ruler;
+
+  h3 {
+    color: black;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input , button{
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.2px;
+    font-size: $ruler;
+    border: 0;
+    outline: 0;
+    padding: $ruler;
+    background-color: $color-bg;
+    text-shadow: 1px 1px 0 $color-white;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  div {
+    color: $color-shadow;
+    text-shadow: 1px 1px 1px $color-white;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    box-shadow: inset 2px 2px 5px $color-shadow,
+      inset -5px -5px 10px $color-white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  
+    &:focus {
+      box-shadow: inset 1px 1px 2px $color-shadow,
+        inset -1px -1px 2px $color-white;
+    }
+  }
+
+  button {
+    color: #61677c;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px $color-white,
+      5px 5px 20px $color-shadow;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+  
+    &:hover {
+      box-shadow: -2px -2px 5px $color-white,
+        2px 2px 5px $color-shadow;
+    }
+  
+    &:active {
+      box-shadow: inset 1px 1px 2px $color-shadow,
+        inset -1px -1px 2px $color-white;
+    }
+  
+    .icon {
+      margin-bottom: 4px;
+    }
+  
+    &.red {
+      display: block;
+      width: 100%;
+      color: $color-red;
+    }
+  }
+}
+
+ .footerLine{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: rgb(220 53 69) !important;
+} 
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 991px) {
+  .authForm {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .authForm {
+    width: 40%;
+  }
+  .formBody {
+    height: 79.5vh;
+  }
+}
+@media (min-width: 551px) and (max-width: 767px) {
+  .authForm {
+    width: 50%;
+  }
+  .formBody {
+    height: 77vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .authForm {
+    width: 60%;
+  }
+  .formBody {
+    height: 86.5vh;
+  }
+  .authForm .create-acc {
+    font-size: 18px;
+  }
+  .authForm a {
+    display: block;
+  }
+}

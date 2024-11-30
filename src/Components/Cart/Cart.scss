@@ -1,0 +1,143 @@
+$color-white: #fff;
+
+.responsive-table {
+  margin-top: 20px;
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .table-header {
+    background-color: #95a5a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .table-row {
+    background-color: $color-white;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .col-1 {
+    flex-basis: 10%;
+  }
+  .col-2 {
+    flex-basis: 30%;
+  }
+  .col-3 {
+    flex-basis: 15%;
+  }
+  .col-4 {
+    flex-basis: 15%;
+  }
+  .col-5 {
+    flex-basis: 15%;
+  }
+  .col-6 {
+    flex-basis: 10%;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-4 {
+      flex-basis: 20%;
+    }
+    .col-2 {
+      flex-basis: 25%;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+    li {
+      display: block;
+    }
+    .col {
+      display: flex;
+      padding: 10px 0;
+      width: 100%;
+      flex-basis: 100%;
+      &:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        text-align: right;
+      }
+    }
+  }
+}
+
+.quantity__minus,
+.quantity__plus,
+.quantity__input {
+  margin: 0;
+  text-align: center;
+  border-top: 2px solid #dee0ee;
+  border-bottom: 2px solid #dee0ee;
+  border-left: 1px solid #dee0ee;
+  border-right: 2px solid #dee0ee;
+  background: $color-white;
+  font-weight: bold;
+}
+
+.quantity__minus,
+.quantity__plus {
+  text-decoration: none;
+  &:hover {
+    background: #575b71;
+    color: $color-white;
+  }
+}
+.quantity__input {
+  width: 50px;
+}
+
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  position: relative;
+  h5 {
+    color: #00000070;
+  }
+  .goShopping {
+    text-decoration: none;
+  }
+
+  img {
+    height: 400px;
+  }
+  .button-6 {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f44336;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    color: $color-white;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    transition: all 250ms;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  .return {
+    margin-left: 10px;
+    font-family: inherit;
+  }
+}
