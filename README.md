@@ -12,34 +12,16 @@ Explore the app’s features instantly—no setup required!
 ---
 
 ## 🚀 Features
+- 🛒 Add, update, and remove products with real-time total calculation and intuitive cart management
+- 🔎 Keyword-based search for quick product discovery
+- 🔐 Secure login, registration, and session handling via Firebase Authentication
+- 💳 Smooth checkout flow from cart review to order completion
+- 🎨 Consistent, responsive, and visually appealing design using React-Bootstrap and SCSS
+- 📱 Optimized for desktop, tablet, and mobile devices
+- 🧠 Centralized state management for products, cart, and user actions with Redux Toolkit
+- 🔒 Reliable user authentication and session management with Firebase
 
-### 🛍️ Core Functionality
-- **Shopping Cart**  
-  Add, update, and remove products with real-time total calculation and intuitive cart management.
-
-- **Product Search**  
-  Quickly find products using keyword-based search functionality.
-
-- **User Authentication**  
-  Integrated **Firebase Authentication** for secure login, registration, and session handling.
-
-- **Checkout Process**  
-  Smooth and structured checkout flow from cart review to order completion.
-
-### 🎨 UI & Design
-- **Modern Interface**  
-  Developed using **React-Bootstrap** and **SCSS** for a consistent, responsive, and visually appealing design.
-
-- **Mobile-First Approach**  
-  Optimized for desktop, tablet, and mobile views to ensure usability on all screen sizes.
-
-### 🔄 State Management
-- **Redux Toolkit Integration**  
-  Centralized state management for product data, cart operations, and user actions using reducers, actions, and a Redux store.
-
-### 🔐 Persistence & Security
-- **Firebase**  
-  Handled user authentication and session management with Firebase for secure and reliable data handling.
+---
 
 ## 🧰 Tech Stack
 
