@@ -1,8 +1,20 @@
-Live Demo : https://ecommerceauth-213ce.web.app/
-
 # 🛒 Responsive E-Commerce Web Application
 
 A fully responsive and modern e-commerce platform built with **React**, **Redux Toolkit**, and **Firebase**, designed to provide users with a seamless shopping experience across all devices.
+
+---
+
+## 📦 Live Demo
+
+✨ Experience E-Commerce Web Application in action: [ecommerceauth-213ce.web.app](https://ecommerceauth-213ce.web.app/)  
+Explore the app’s features instantly—no setup required!
+
+---
+
+
+Live Demo : https://ecommerceauth-213ce.web.app/
+
+
 
 ## 🚀 Features
 
