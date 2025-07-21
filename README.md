@@ -11,11 +11,6 @@ Explore the app’s features instantly—no setup required!
 
 ---
 
-
-Live Demo : https://ecommerceauth-213ce.web.app/
-
-
-
 ## 🚀 Features
 
 ### 🛍️ Core Functionality
